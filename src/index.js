@@ -33,8 +33,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     editButton.addEventListener("click", function(event){
       event.preventDefault();
-      // let thisTask = event.target
-      // console.log(thisTask)
       let userInput = prompt("What do you want to change this to?")
       span.innerText = userInput
     });
