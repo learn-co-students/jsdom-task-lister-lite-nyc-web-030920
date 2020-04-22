@@ -1,10 +1,8 @@
-
-
 let ul = list.getElementsByTagName("ul")[0]
-console.log(ul)
+// console.log(ul)
 let field = document.getElementsByTagName('input')[0]
 let form = document.getElementById('create-task-form')
-console.log('letting and setting')
+// console.log('letting and setting')
 
 document.addEventListener("DOMContentLoaded", () => {
   // console.log("dom running")
