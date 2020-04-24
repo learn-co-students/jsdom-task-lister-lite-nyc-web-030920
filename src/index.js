@@ -1,33 +1,23 @@
-document.addEventListener("DOMContentLoaded", () => {
-  // your code here
-  
-  // function submitValue(){
-  
-  // console.log(input)
-  
-  const submit = document.getElementById('create-task-form')
-  
-  submit.addEventListener('submit',function(event){
-  //  console.log(submitBtn);
-  event.preventDefault();
-    
-    const input = document.getElementById('new-task-description')
-    
-    const ul = document.getElementById('tasks');
-    
-    const li = document.createElement('li')
-    
-    li.innerText = input.value;
-    
-    // console.log(input.value)
-    
-    ul.append(li);
+document.addEventListener('DOMContentLoaded',function(){
+  const input = document.getElementById('new-task-description')
 
-    submit.reset();
+  const submitBtn = document.getElementById('create-task-form')
+
+  submitBtn.addEventListener('submit',function(e){
+    e.preventDefault()
     
+    const textEntered = input.value
+
+    const ul = document.getElementById('tasks')
+
+    let li = document.createElement('li');
+    
+    li.innerText = textEntered
+
+    ul.appendChild(li);
+
+
+
   })
   
-
-  // console.log(submit.children[1].value)
-
 })
