@@ -35,3 +35,34 @@ button {
   border-radius: 5px;
   box-shadow: 2px 5px 5px #333;
 }
+
+li {
+  margin-bottom: 8px;
+}
+
+.delete{
+  background: aqua;
+  margin: 4px;
+  cursor: pointer;
+  padding: 2px;
+  border-radius: 20%;
+  border: 1px solid black;
+}
+
+.delete:hover {
+  color:white;
+  background: blue;
+}
+
+.high{
+  background: red;
+  color:white;
+}
+
+.medium{
+  background: yellow;
+}
+
+.low{
+  background: lightgreen;
+}

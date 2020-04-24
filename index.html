@@ -12,6 +12,19 @@
     <form id="create-task-form" action="#" method="post">
       <label for="new-task-description">Task description:</label>
       <input type="text" id="new-task-description" name="new-task-description" placeholder="description">
+      
+      <br>
+
+      <label for="new-task-date">Task due date:</label>
+      <input type="text" id="new-task-date" name="new-task-date" placeholder="due date">
+      <br>
+
+      <select id="priority"> 
+        <option value="low"> low </option>
+        <option value="medium"> medium </option>
+        <option value="high"> high </option>
+      </select>
+
       <input type="submit" value="Create New Task">
     </form>
 
